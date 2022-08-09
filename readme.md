@@ -1,4 +1,4 @@
-link: https://pages.git.generalassemb.ly/aichingung/sei-project-1/
+link: https://aichingung.github.io/tic-tac-toe/
 
 
 Initial html setup
