@@ -1,0 +1,327 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+  background-color: blanchedalmond;
+  background-image: url('https://img.freepik.com/free-vector/continuous-line-drawing-judges-hammer-vector-illustration_500861-705.jpg');
+  background-repeat: round;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.main-container {
+  background-color: cadetblue;
+  width: 50%;
+  margin: auto;
+  margin-top: 70px;
+  border-radius: 20px;
+  margin-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 0px;
+}
+
+.board-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 0px;
+  width: 600px;
+  border: 8px solid black;
+  padding: 20px;
+  border-radius: 20px;
+  margin: auto;
+  box-shadow: 0 6px 10px 0 black;
+}
+
+.board.poop-symbol,
+.board.bed-symbol {
+  cursor: not-allowed;
+}
+
+
+.board {
+  border: 8px solid black;
+  height: 180px;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 black;
+}
+
+.board:hover {
+  border: 8px solid white;
+  height: 180px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 black;
+}
+
+.results-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* text-align: center; */
+  padding: 30px;
+  gap: 300px;
+  
+}
+
+.players-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  
+}
+
+.score {
+  font-size: 25px;
+  background-color: blanchedalmond;
+  box-shadow: 0 4px 8px 0 black;
+  padding: 10px;
+}
+
+.input-box-container{
+  font-size: 35px;
+  margin-top: 0px;
+}
+
+
+.amber-heard {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 black;
+}
+
+.amber-heard:hover {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid red;
+}
+
+.johnny-depp {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border: 2px solid black;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 black;
+}
+
+.johnny-depp:hover {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid blueviolet;
+}
+
+
+.poop-symbol {
+  /* background-image: url('https://c.tenor.com/xKLb9U7GmREAAAAM/cute-poop.gif'); */
+  background-image: url('https://nypost.com/wp-content/uploads/sites/2/2017/07/070317-poop-1.jpg?quality=75&strip=all');
+  background-size: 220px;
+  background-position: 37%;
+}
+
+.bed-symbol {
+  /* background-image: url('https://24.media.tumblr.com/81e31aa01cfe6d8506f2c1d51f0ea3f3/tumblr_mkeyie7LYc1qc8gf9o1_500.gif'); */
+  background-image: url('https://pbs.twimg.com/media/ExgluOBUcAAARDj.jpg');
+  background-size: 200px;
+  background-position: 37%;
+}
+
+.button-container{
+  display: grid;
+  grid-template-columns: 30%;
+  margin-left: 360px;
+  font-size: 40px;
+  
+}
+
+.reset-all-btn:hover {
+  background-color: darkcyan;
+  border-color: white;
+  color: white;
+  box-shadow: 0 4px 8px 0 gray;
+}
+
+.reset-all-btn {
+  font-size: 20px;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  font-family: 'Roboto Mono', monospace;
+  box-shadow: 0 4px 8px 0 black;
+}
+
+audio {
+  margin-top: 20px;
+}
+
+
+
+
+
+
+.shade,
+.modal {
+  display: none;
+}
+
+#shade {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#shade,
+.modal {
+  display: none;
+}
+
+.shade {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  position: fixed;
+  z-index: 101;
+  top: 20%;
+  left: 25%;
+  width: 100%;
+}
+
+.shade {
+  background: silver;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.modal-img {
+  width: 80%;
+  border: 5px solid white;
+}
+
+.shade2,
+.modal2 {
+  display: none;
+}
+
+.shade2 {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#shade2,
+.modal2 {
+  display: none;
+}
+
+#shade2 {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-img2 {
+  margin-left: 200px;
+  width: 30%;
+  height: 10%;
+  border: 5px solid black;
+}
+
+.modal2 {
+  position: fixed;
+  z-index: 101;
+  top: 20%;
+  left: 25%;
+  width: 100%;
+}
+
+.shade2 {
+  background: silver;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.shade3,
+.modal3 {
+  display: none;
+}
+
+.shade3 {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#shade3,
+.modal3 {
+  display: none;
+}
+
+#shade3 {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal3 {
+  position: fixed;
+  z-index: 101;
+  top: 20%;
+  left: 25%;
+  width: 100%;
+}
+
+.shade3 {
+  background: silver;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.modal-img3{
+  margin-left: 200px;
+  width: 30%;
+  height: 10%;
+  border: 5px solid black;
+}
+
+
+.playerOne{
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+
+.player-2{
+  font-size: 40px;
+  
+}
+
+
+
+
+
